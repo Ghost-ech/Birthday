@@ -6,16 +6,23 @@ body {
 canvas{display:block}
 h1 {
   position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: "Source Sans Pro";
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 900;
   -webkit-user-select: none;
   user-select: none;
-  margin-top: 70%;
+  
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
 .birthday span {
