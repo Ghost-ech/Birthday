@@ -37,7 +37,7 @@ class Birthday {
           x,
           y,
           random(0, 260),
-          random(30, 110)
+          random(30, 165)
         )
       );
 
@@ -127,7 +127,7 @@ class Firework {
         let point = this.history[i];
         ctx.beginPath();
         ctx.fillStyle = "hsl(" + this.shade + ",100%," + i + "%)";
-        ctx.arc(point.x, point.y, 1, 0, PI2, false);
+        ctx.arc(point.x, point.y, 4, 0, PI2, false);
         ctx.fill();
       }
     } else {
